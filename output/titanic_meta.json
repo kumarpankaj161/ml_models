@@ -1,0 +1,43 @@
+{
+  "pipeline": "titanic",
+  "shape": [
+    891,
+    8
+  ],
+  "fill_values": {
+    "Age": 28.0
+  },
+  "encodings": {
+    "Sex": {
+      "male": 0,
+      "female": 1
+    },
+    "Embarked": {
+      "S": 0,
+      "C": 1,
+      "Q": 2
+    }
+  },
+  "log": [
+    {
+      "time": "17:12:49",
+      "msg": "Loaded: (891, 12)"
+    },
+    {
+      "time": "17:12:49",
+      "msg": "Dropped: ['Cabin', 'Ticket', 'Name', 'PassengerId']"
+    },
+    {
+      "time": "17:12:49",
+      "msg": "Nulls filled"
+    },
+    {
+      "time": "17:12:49",
+      "msg": "Encoded: ['Sex', 'Embarked']"
+    },
+    {
+      "time": "17:12:49",
+      "msg": "Built. Shape: (891, 8)"
+    }
+  ]
+}
