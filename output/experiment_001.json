@@ -1,0 +1,18 @@
+{
+  "experiment_id": "exp_001",
+  "model": "RandomForestClassifier",
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 5
+  },
+  "metrics": {
+    "accuracy": 0.823,
+    "f1_score": 0.778
+  },
+  "features_used": [
+    "Pclass",
+    "Age",
+    "Fare",
+    "Sex_encoded"
+  ]
+}
