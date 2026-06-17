@@ -159,17 +159,15 @@ The project may use:
 
 Generated outputs are stored in:
 
-```text
 output/
-```
+
 
 Visualizations are stored in:
-
-```text
 charts/
-```
-
----
+![NULL Percentage](charts/bar_chart_null_%.png)
+![Feature Correlations](charts/heatmap+feature_correlations.png)
+![Outliers](charts/outlier_grliv_saleprice.png)
+![sales price dist](charts/salesprice_distribution.png)
 
 ## 🔮 Future Improvements
 
