@@ -164,7 +164,7 @@ output/
 
 Visualizations are stored in:
 charts/
-![NULL Percentage](charts/bar_chart_null_%.png)
+![NULL Percentage](charts/bar_chart_null_percentage.png)
 ![Feature Correlations](charts/heatmap+feature_correlations.png)
 ![Outliers](charts/outlier_grliv_saleprice.png)
 ![sales price dist](charts/salesprice_distribution.png)
