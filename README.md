@@ -132,9 +132,9 @@ jupyter notebook
 
 Open:
 
-```text
+
 House_Prices_EDA.ipynb
-```
+
 
 ### Run Python Script
 

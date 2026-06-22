@@ -4,9 +4,11 @@ __pycache__/
 *.py[codz]
 *$py.class
 *.pkl
+input.csv
 # C extensions
 *.so
-
+Rag_Based_AI/audios/
+Rag_Based_AI/Videos
 # Distribution / packaging
 .Python
 build/
