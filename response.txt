@@ -1,0 +1,9 @@
+You're interested in learning about Python variables! That's a great topic!
+
+In our course, we actually cover this in two videos: "Introduction to Python" (Video 1) and "Variables in Python" (Video 4).
+
+For your question, you can start with Video 1, where the instructor introduces the basics of Python programming. The relevant timestamp is around 180 seconds into the video, but since it's a short video, I recommend watching from the beginning.
+
+However, if you want to dive straight into variables, that's when Video 4 comes in. At approximately 20 seconds into Video 4, the instructor explains what variables are and how to use them for numbers (both integers and floats). If you watch until around 45 minutes into the video, the instructor covers a range of topics related to using variables in Python.
+
+If you'd like to learn more about Python variables or need further clarification on any topic, I'd be happy to help!
