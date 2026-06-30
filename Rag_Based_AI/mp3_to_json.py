@@ -1,25 +1,27 @@
 import whisper
 import json
 import os
-#
 
-model = whisper.load_model("base")
+model = whisper.load_model("large-v2")
 
-mp3s = os.listdir("Rag_Based_AI/audios")
+audios = os.listdir("audios")
 
-for audio in mp3s:      
-    number = audio.split("-")[0]
-    title = audio.split("-")[1][:-4]
-    print(number, title)
-    result = model.transcribe(audio = f"Rag_Based_AI/audios/{audio}",
-                         language = "en",
-                         task = "translate",
-                         word_timestamps=False)
-    chunks = []
-    for segment in result["segments"]:
-        chunks.append({"number" : number,"title" : title ,"start": segment["start"], "end": segment["end"], "text": segment["text"]})
+for audio in audios: 
+    if("_" in audio):
+        number = audio.split("_")[0]
+        title = audio.split("_")[1][:-4]
+        print(number, title)
+        result = model.transcribe(audio = f"audios/{audio}", 
+        # result = model.transcribe(audio = f"audios/sample.mp3", 
+                              language="hi",
+                              task="translate",
+                              word_timestamps=False )
+        
+        chunks = []
+        for segment in result["segments"]:
+            chunks.append({"number": number, "title":title, "start": segment["start"], "end": segment["end"], "text": segment["text"]})
+        
+        chunks_with_metadata = {"chunks": chunks, "text": result["text"]}
 
-    chunks_with_metadata = {"chunks": chunks, "text": result["text"]}
-
-    with open(f"C:/Users/pk362/ML_MODEL/Rag_Based_AI/jsons/{audio}.json", "w") as f:
-        json.dump(chunks_with_metadata,f)
+        with open(f"jsons/{audio}.json", "w") as f:
+            json.dump(chunks_with_metadata,f)

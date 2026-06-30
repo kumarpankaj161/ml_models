@@ -1,14 +1,19 @@
-
+embeddings.joblib
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
 *.pkl
 input.csv
+*.webm
+*.mp3
 # C extensions
-*.so
+
+so
 Rag_Based_AI/audios/
-Rag_Based_AI/Videos
+Rag_Based_AI/archieve/
+Rag_Based_AI/Videos/
+Rag_Based_AI/jsons/
 # Distribution / packaging
 .Python
 build/
@@ -219,4 +224,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+embeddings.joblib
 

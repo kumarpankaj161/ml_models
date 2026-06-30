@@ -1,8 +1,8 @@
 import requests
 import os
 import json
-import pandas as pd
 import numpy as np
+import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import joblib
 
@@ -15,7 +15,6 @@ def create_embedding(text_list):
 
     embedding = r.json()["embeddings"] 
     return embedding
-
 
 
 jsons = os.listdir("Rag_Based_AI/jsons")  # List all the jsons 
@@ -33,25 +32,8 @@ for json_file in jsons:
         chunk['embedding'] = embeddings[i]
         chunk_id += 1
         my_dicts.append(chunk) 
-# print(my_dicts)
 
 df = pd.DataFrame.from_records(my_dicts)
-#print(df)
+# Save this dataframe
 joblib.dump(df, 'embeddings.joblib')
-# a = create_embedding("Cat sat on the mat")
-# print(a)
 
-# df = pd.DataFrame.from_records(my_dicts) 
-# incoming_query = input("Ask a Question: ")
-# question_embedding = create_embedding([incoming_query])[0] 
-
-# # Find similarities of question_embedding with other embeddings
-# # print(np.vstack(df['embedding'].values))
-# # print(np.vstack(df['embedding']).shape)
-# similarities = cosine_similarity(np.vstack(df['embedding']), [question_embedding]).flatten()
-# print(similarities)
-# top_results = 3
-# max_indx = similarities.argsort()[::-1][0:top_results]
-# print(max_indx)
-# new_df = df.loc[max_indx] 
-# print(new_df[["title", "number", "text"]])

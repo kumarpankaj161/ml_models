@@ -1,9 +1,9 @@
-You're interested in learning about Python variables! That's a great topic!
+Hi there! 
 
-In our course, we actually cover this in two videos: "Introduction to Python" (Video 1) and "Variables in Python" (Video 4).
+So, you're wondering where HTML gets concluded in our Sigma web development course? That's a great question!
 
-For your question, you can start with Video 1, where the instructor introduces the basics of Python programming. The relevant timestamp is around 180 seconds into the video, but since it's a short video, I recommend watching from the beginning.
+To answer your question, HTML is actually concluded by the end of Video 13. If you'd like to see exactly where it's concluded, you can check out Video 13 at around 2 seconds into the video (start time: 2.56). However, don't worry if that seems a bit early - in this video, he's talking about wrapping up some additional details related to HTML.
 
-However, if you want to dive straight into variables, that's when Video 4 comes in. At approximately 20 seconds into Video 4, the instructor explains what variables are and how to use them for numbers (both integers and floats). If you watch until around 45 minutes into the video, the instructor covers a range of topics related to using variables in Python.
+However, later on, in Video 13 as well, there is another mention of how HTML has been concluded at around 51 seconds into the same video (start time: 520.32).
 
-If you'd like to learn more about Python variables or need further clarification on any topic, I'd be happy to help!
+And if you'd like to see him wrap everything up for good, that happens towards the end of Video 2, starting from about 1064 seconds in (start time: 1064.44).
